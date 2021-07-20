@@ -1,0 +1,7 @@
+目录中有三个文件夹。可以结合 /tomcat所用到的jar包/jar包说明 来看
+
+mavenTest 是mymavenproject{Ver}.jar这个jar包的源码(这个jar包是主要工作量,分工完成) (是一个maven项目,导包方便。)
+
+dingqiexec 是dingqiexec1.jar这个jar包的源码
+
+webroot是网站上的文件源码。

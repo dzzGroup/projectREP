@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/fastjson-1.2.39.jar"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/jfreechart-1.0.19.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19-sources.jar"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/mysql-connector-java-5.1.45.jar"/>
+	<classpathentry kind="lib" path="D:/java/java_workspace/jar/myMavenProject13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

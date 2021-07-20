@@ -1,0 +1,29 @@
+1.依赖关系
+myMavenProject13.jar依赖fastjson,jcommon,jfreechart,mysql-connector,jsoup这5个包。
+ 
+dingqiexec1.jar直接依赖myMavenProject13.jar包。
+不过好在打包的时候，dingqiexec1.jar把所有依赖的包打进去了，所以可以独立运行。
+
+2.功能说明
+(1)下载的包:
+fastjson:阿里巴巴的一个处理json数据的包，在做java爬虫的时候经常用到
+jcommon,jfreechart:数据可视化的包。
+mysql-connector:用于连接mysql数据库的包。
+jsoup: jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，
+　可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
+
+(2)我们写的包:
+<<1>>
+myMavenProject13.jar:
+针对这个项目写的包,也是这个项目的主要工作量。提供了数据爬取，视频爬取，数据库IO接口，可视化方法。最终为jsp所用。可以把它看作是一个库，而不是一个脚本。
+<<2>>
+dingqiexec1.jar:
+可以理解为一个小的java脚本，它也依赖于myMavenProject包，用命令行命令
+java -jar dingqiexec1.jar执行。
+执行内容：
+1.读取取同目录下的ap.txt,把前两行读取出来，第一行作为mysql帐号
+第二行作为mysql密码，尝试连接数据库。
+2.读取同目录下的bvids.txt,把所有的bvid号读出来，存入一个数组中,
+3.对于每个bvid进行视频信息爬取。
+4.将爬取得到的结果，通过sqlutil,把数据处理后存入数据库web中。
+
